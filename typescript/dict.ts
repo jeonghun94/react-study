@@ -41,6 +41,10 @@ class Dict {
   count() {
     return Object.keys(this.words).length;
   }
+
+  exists(key: string): boolean {
+    return this.words[key] ? true : false;
+  }
 }
 
 class Word {
@@ -61,6 +65,9 @@ dict.update(potato2);
 console.log(dict.get());
 const pizza = new Word("pizza", "nice");
 dict.add(pizza);
-
 console.log(dict.showAll());
 console.log(dict.count());
+console.log(dict.exists("pizza"));
+console.log(dict.exists("water"));
+
+// reuslt
