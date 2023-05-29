@@ -69,5 +69,3 @@ console.log(dict.showAll());
 console.log(dict.count());
 console.log(dict.exists("pizza"));
 console.log(dict.exists("water"));
-
-// reuslt
